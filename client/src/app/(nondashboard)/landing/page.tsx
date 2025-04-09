@@ -3,7 +3,6 @@ import DiscoverSection from "./discover-section";
 import ExploreRentals from "./explore-rentals";
 import FeaturesSection from "./features-section";
 import FooterSection from "./footer-section";
-import HeroSection from "./hero-section";
 import HeroSectionn from "./hero-section2";
 
 export default function Page() {
