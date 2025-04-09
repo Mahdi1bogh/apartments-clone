@@ -37,7 +37,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 w-full z-50 shadow-xl"
       style={{ height: `${NAVBAR_HEIGHT}px` }}
     >
-      <div className="flex justify-between items-center w-full py-3 px-8 bg-gray-700 text-white">
+      <div className="flex justify-between items-center bg-white text-black w-full py-3 px-8 ">
         <div className="flex items-center gap-4 md:gap-6">
           {isDashboardPage && (
             <div className="md:hidden">
@@ -50,18 +50,8 @@ const Navbar = () => {
             scroll={false}
           >
             <div className="flex items-center gap-3">
-              <Image
-                src="/logo.svg"
-                alt="Rentiful Logo"
-                width={24}
-                height={24}
-                className="w-6 h-6"
-              />
-              <div className="text-xl font-bold">
-                Apart
-                <span className="text-pink-500 font-light hover:!text-gray-300">
-                  ments
-                </span>
+              <div className="text-xl text-green-800 font-bold">
+                Apartments.com
               </div>
             </div>
           </Link>
@@ -94,7 +84,7 @@ const Navbar = () => {
           )}
         </div>
         {!isDashboardPage && (
-          <p className="text-gray-200 hidden md:block">
+          <p className="text-zinc-800 hidden md:block">
             Discover your perfect rental apartment with our advanced search
           </p>
         )}
@@ -103,11 +93,11 @@ const Navbar = () => {
             <>
               <div className="relative hidden md:block">
                 <MessageCircle className="w-6 h-6 cursor-pointer text-gray-200 hover:text-gray-400" />
-                <span className="absolute top-0 right-0 w-2 h-2 bg-pink-700 rounded-full"></span>
+                <span className="absolute top-0 right-0 w-2 h-2 bg-green-700 rounded-full"></span>
               </div>
               <div className="relative hidden md:block">
                 <Bell className="w-6 h-6 cursor-pointer text-gray-200 hover:text-gray-400" />
-                <span className="absolute top-0 right-0 w-2 h-2 bg-pink-700 rounded-full"></span>
+                <span className="absolute top-0 right-0 w-2 h-2 bg-green-700 rounded-full"></span>
               </div>
 
               <DropdownMenu>
@@ -162,15 +152,15 @@ const Navbar = () => {
               <Link href="/signin">
                 <Button
                   variant="outline"
-                  className="text-white border-white bg-transparent hover:bg-white hover:text-gray-700 rounded-lg"
+                  className="text-black border-green-400 bg-transparent  hover:text-gray-700 rounded-lg"
                 >
                   Sign In
                 </Button>
               </Link>
               <Link href="/signup">
                 <Button
-                  variant="secondary"
-                  className="text-white bg-pink-600 hover:bg-white hover:text-gray-700 rounded-lg"
+                  variant="outline"
+                  className="text-white bg-green-600 hover:bg-green-500 hover:text-white rounded-lg"
                 >
                   Sign Up
                 </Button>
