@@ -34,7 +34,7 @@ const FiltersBar = () => {
   const viewMode = useAppSelector((state) => state.global.viewMode);
   const [searchInput, setSearchInput] = useState(filters.location);
 
-  const updateURL = debounce((newFilters: FiltersState) => {
+  const updateURL = (newFilters: FiltersState) => {
     const cleanFilters = cleanParams(newFilters);
     const updatedSearchParams = new URLSearchParams();
 
@@ -46,7 +46,7 @@ const FiltersBar = () => {
     });
 
     router.push(`${pathname}?${updatedSearchParams.toString()}`);
-  });
+  };
 
   const handleFilterChange = (
     key: string,
