@@ -53,7 +53,7 @@ export default function HeroSectionn() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="https://www.apartments.com/a/df5ed6/modules/homepage/content/images/heroes/chicago-il/1920.jpg"
+          src="/hero-section.jpg"
           alt="Chicago Skyline"
           fill
           priority
